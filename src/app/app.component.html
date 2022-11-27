@@ -1,0 +1,31 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="over" #sidenav>
+    <a>Home</a>
+    <a>About Us</a>
+    <a>Services</a>
+    <a>Our Teams</a>
+    <a>Contact Us</a>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="page-container">
+      <header>
+        <div class="logo">
+          <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+          <app-dananz-logo></app-dananz-logo>
+        </div>
+        <div class="navigation">
+          <nav>
+            <a>Home</a>
+            <a>About Us</a>
+            <a>Services</a>
+            <a>Our Teams</a>
+          </nav>
+          <div class="contactUs">
+            <a>Contact Us</a>
+          </div>
+        </div>
+      </header>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
