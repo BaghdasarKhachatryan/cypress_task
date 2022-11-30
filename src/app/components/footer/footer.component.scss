@@ -98,8 +98,10 @@
         position: relative;
         img {
           position: absolute;
-          top: 0;
-          right: 0;
+          top: 5px;
+          right: 5px;
+          width: 23px;
+          height: 9px;
         }
         input {
           width: 100%;
