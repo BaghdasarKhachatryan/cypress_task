@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;1,700&display=swap");
+@import "colors";
+
+.home-container {
+  padding: 0;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+
+    h1 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 56px;
+      line-height: 140%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    p {
+      text-align: center;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 160%;
+      width: 518px;
+    }
+  }
+  &__content {
+    img {
+      height: 513px;
+      max-width: 100%;
+    }
+    &__description {
+      display: flex;
+      flex-direction: row;
+      padding: 97px 0 70px 0;
+
+      h1 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        color: #333;
+        //   padding: 24px;
+      }
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        padding-top: 9px;
+        color: $font-grey;
+      }
+      .project_overview {
+        flex: 50%;
+        // padding: 10px;
+        &__footer {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 160%;
+          color: $font-grey;
+          margin-top: 59px;
+
+          &__date {
+            flex: 30%;
+          }
+          &__design {
+            flex: 60%;
+          }
+        }
+      }
+      .design_process {
+        // box-sizing: border-box;
+        flex: 50%;
+        // padding: 9px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // gap: 5px;
+        padding-left: 40px;
+      }
+    }
+
+    &__images {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      .row {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        .flex-half {
+          flex: 50%;
+          img {
+            // width: 100%;
+            width: 584px;
+            height: 513px;
+          }
+        }
+      }
+    }
+  }
+}
