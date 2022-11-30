@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;1,700&display=swap");
 @import "colors";
+@import "responsive";
 
 .home-container {
   padding: 0;
@@ -19,6 +20,12 @@
       line-height: 140%;
       text-align: center;
       margin-bottom: 40px;
+      @include mobile {
+        width: auto;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 120%;
+      }
     }
     p {
       text-align: center;
@@ -28,17 +35,30 @@
       font-size: 18px;
       line-height: 160%;
       width: 518px;
+      @include mobile {
+        width: auto;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 130%;
+      }
     }
   }
   &__content {
     img {
       height: 513px;
       max-width: 100%;
+      @include mobile {
+        height: auto;
+      }
     }
     &__description {
       display: flex;
       flex-direction: row;
       padding: 97px 0 70px 0;
+      @include mobile {
+        flex-direction: column;
+        gap: 10px;
+      }
 
       h1 {
         font-family: "Poppins";
@@ -47,7 +67,13 @@
         font-size: 24px;
         line-height: 140%;
         color: #333;
-        //   padding: 24px;
+
+        @include mobile {
+          width: auto;
+          font-weight: 450;
+          font-size: 22px;
+          line-height: 120%;
+        }
       }
       p {
         font-family: "Poppins";
@@ -57,10 +83,15 @@
         line-height: 160%;
         padding-top: 9px;
         color: $font-grey;
+        @include mobile {
+          width: auto;
+          font-weight: 200;
+          font-size: 16px;
+          line-height: 130%;
+        }
       }
       .project_overview {
         flex: 50%;
-        // padding: 10px;
         &__footer {
           display: flex;
           flex-direction: row;
@@ -73,6 +104,12 @@
           line-height: 160%;
           color: $font-grey;
           margin-top: 59px;
+          @include mobile {
+            font-weight: 250;
+            font-size: 14px;
+            line-height: 130%;
+            margin-top: 45px;
+          }
 
           &__date {
             flex: 30%;
@@ -83,14 +120,14 @@
         }
       }
       .design_process {
-        // box-sizing: border-box;
         flex: 50%;
-        // padding: 9px 24px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        // gap: 5px;
         padding-left: 40px;
+        @include mobile {
+          padding-left: 0;
+        }
       }
     }
 
@@ -102,12 +139,17 @@
         display: flex;
         flex-direction: row;
         gap: 32px;
+        @include mobile {
+          flex-direction: column;
+        }
         .flex-half {
           flex: 50%;
           img {
-            // width: 100%;
             width: 584px;
             height: 513px;
+            @include mobile {
+              height: auto;
+            }
           }
         }
       }
